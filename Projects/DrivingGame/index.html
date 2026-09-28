@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title> Leevi Ojaniemi</title>
+    <link rel="shortcut icon" type="image/png" href="../../IMG/FAVICON.png">
+    <link rel="stylesheet" href="../../CSS/Normalize.css">
+    <link rel="stylesheet" href="../../CSS/Styles.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Electrolize&display=swap" rel="stylesheet">
+
+    <meta name="description" content="Projects page">
+    <meta name="Keywords" content="Gamedev, developer, software, videogames, portfolio, Leevi Ojaniemi">
+    <meta name="author" content="Leevi Ojaniemi">
+    <meta name="viewport" content="width=device-width, inital-scale=1.0">
+</head>
+<body>
+    <!--The entire webpage inside this wrapper-->
+    <div id="wrapper">
+        <!--Header should be uniform on all pages, except root index-->
+        <nav id="header">
+            
+            <div class="navElement electrolize-regular">
+                <a title="Link to the home page" aria-label="Link to the home page in Navigation bar." href="../../"> 
+                    Home
+                </a>
+            </div>
+
+            <div class="navElement electrolize-regular">
+                <a title="Link to the about page." aria-label="Link to the about page in Navigation bar." href="../../About/"> 
+                    About
+                </a>
+            </div>
+
+            <div class="navElement electrolize-regular">
+                <a title="Link to the projects page." aria-label="Link to the projects page in Navigation bar." href="../../Projects/"> 
+                    Projects
+                </a>
+            </div>
+
+            <div class="navElement electrolize-regular">
+                <a title="Link to the skills page." aria-label="Link to the skills page in Navigation bar." href="../../Skills/"> 
+                    Skills
+                </a>
+            </div>           
+        </nav>
+        
+        <div id="contentWrapper"><!--Webpage contents should be added here, contents are unique-->        
+            <div class="ImageArticle">
+                <img src="../DrivingGame/IMG/TheRoad.png" alt="A boxy red car driving on a low-poly highway between tall skyscrapers towards a sunset.">
+            </div>
+            <div id="Article">
+               <h1>Driving Game (2024)</h1>
+               <hr>
+               <!--Links to other pages about this project, github, itch, etc.-->
+               <div class="linkRow electrolize-regular">
+                    <a aria-label="Link to the Itch.io page of Driving game." href="https://neulanen.itch.io/ajopeli">Itch.io</a>
+               </div>
+               <hr>      
+               <p class="center">
+                Driving game was my first true videogame made in a real game engine. 
+                It is a 3D runner game, where you manouver a car between obstacles in an attempt to survive a certain distance. 
+                It was made in about a week for a game programming beginners course during my first semester at <em>XAMK</em>.
+                Driving Game was a solo project.           
+               </p>
+               <h2>The specifications</h2>
+               <p>
+                The initial specifications for the task were to make a side scroller with some form of obstacles and collectibles.
+                The task was set to follow the <em>Unity</em> tutorial series. 
+                I felt that I could do something more challenging, and decided to take the game to 3D and use my own assets instead.
+                I took inspiration from the music videos of Synthwave and Retrowave, which often include a retro car driving through a futuristic scene.
+                And so I set to make an endless runner with a cool retro car driving through a vast futuristic city.
+                </p>
+               <div class="ImageArticle">
+                <img src="../DrivingGame/IMG/BoxCity.png" alt="A red car driving in a maze of untextured boxes.">
+               </div>
+               <h2>The beginning</h2>
+               <p>
+                I began the project by designing the car. 
+                It was modeled with the lessons learned during the modeling course of that semester. 
+                It is based on the BMW cars of the 80s, being some combination of the BMW E30 and BMW 2002. 
+                Designing the car was an intresting process, and I learned a lot during it. 
+                The final car was designated as the "Datura Maxima".
+               </p>
+               <br>
+               <p>
+                Designing the city was a lesson on texture mapping and prefab building. 
+                The cityscape is semi-randomly generated during runtime from predetermined prefabs, and only the sun and the car exist consistently.
+                Learning how to fit all the generated pieces together was a challenge.
+               </p>
+               <div class="ImageArticle"> <img src="../DrivingGame/IMG/UnfinishedCar.png" alt="An unfinished model of a boxy car."></div>
+               <h2>The results</h2>
+               <p>
+                While it is clear that the end result is not perfect in anyway, I still consider it a good start in Gamedev.
+                The end result is in spite of it's flaws quite a stylish creation in my opinion. 
+                Some features had to be rushed due to the deadline closing in faster than expected.
+                As such the scripts are full of holes and still quite buggy.                
+               </p>
+               <h2>"Post Mortem"</h2>
+               <p>
+                In relation to the goals I established for myself in the beginning, I feel like I surpassed them wildly.
+                I learned so much about programming and especially what practices to avoid in the future. 
+                The game is a complete mess on the inside, with every script being dependent on each other. 
+                I am however proud of the aesthetic and feel of the game.
+                In spite of the mistakes made along the way, this project was an amazing start to a hopefully fruitful career in video game developement. 
+               </p>
+               <div class="linkRow">
+                <a aria-label="Link back to the projects page." href="../">Return to the projects page.</a>
+                </div>
+            </div>
+
+            
+        </div>
+        <!--Footer should also be uniform-->
+        <div id="footer">
+            <p class="left">Header font: Electrolize. License:<br> Copyright (c) 2011, Cyreal (www.cyreal.org), <br>with Reserved Font Name "Electrolize". 
+          </p>
+          <a title="Link to the contact page." aria-label="Link to the contact page." href="../../Contact/">Get in touch!</a>
+          <p class="right">
+              All pictures used on this site are my own <br> and must not be copied without explicit permission.
+          </p>
+          </div>
+       
+    </div>
+    
+</body>
+</html>
