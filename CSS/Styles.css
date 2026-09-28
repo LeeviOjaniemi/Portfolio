@@ -1,0 +1,504 @@
+/*Reset all styles*/
+*{
+    margin: 0px;
+    padding: 0px;
+}
+/*Colour variables*/
+:root{
+/*Main colour present as a background color*/
+--Main:#0D300F;
+/*darker shade of main for highlights*/
+--HighlightDark:#071c08;
+--Text:#F5DD66;
+}
+hr{
+    border-color: var(--Text);
+    margin-top: 1em;
+    margin-bottom: 1.5em;
+}
+/*Text styling*/
+p{
+    color: var(--Text);
+    text-align: justify;
+    padding-bottom: .5em;
+    line-height: 2;
+    font-family: monospace;
+}
+.center
+{
+    text-align: center;
+}
+.underline{
+    text-decoration: underline;
+}
+i{
+    color: var(--Text);
+    text-align: center;
+    padding-bottom: .5em;
+    line-height: 2;
+}
+h1{
+    color: var(--Text);
+    font-family: "Electrolize", serif;
+    font-size:4em;
+    text-align: center;
+    padding-top: 30px;
+    padding-bottom: 15px;
+}
+h2{
+    color: var(--Text);
+    font-family: "Electrolize", serif;
+    font-size:2em;
+    text-align: left;
+    padding-top: 1em;
+    padding-bottom: 0.5em;
+}
+a{
+    color:var(--Text);
+    line-height: 2;
+    text-align: center;
+}
+a:hover{
+    color: red;
+}
+em{
+    font-weight: 700;
+    font-style: normal;
+}
+.electrolize-regular {
+    font-family: "Electrolize", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+#wrapper{
+    background-image: url(../IMG/Background.png);
+   
+    height: 100vh;
+    width: 100vw;
+    overflow: auto;
+    background-size: 100vw 100vh;
+    background-repeat: no-repeat;
+} 
+#header{
+    height: 10vh;
+    width: 100vw;
+    border-bottom: 3px solid #F5DD66;
+    background-color: var(--HighlightDark);
+    position: fixed;
+    display:flex;
+    flex-direction: row;
+    box-shadow: 0px 5px 10px 5px black;
+    z-index: 10;
+}
+#contentWrapper{
+    padding-top: 10vh;
+    overflow: auto; 
+    min-height: 100vh;
+    background-color: black;  
+    display: flex;
+    flex-direction: column;
+    margin: 0px;
+    box-shadow: 5px 0px 5px black, -5px 0px 5px black;  
+    z-index: 0;
+}
+#footer{
+  background-color: var(--HighlightDark);  
+  border-top: 3px solid #F5DD66;
+  box-shadow: 0px -5px 10px 5px black;
+  height: auto;
+  padding: 2em;
+  display: flex;
+  flex-flow: column wrap; 
+  z-index: 10;
+}
+#footer .left{
+    margin: auto;
+    text-align: center;
+}
+#footer a{
+    font-size: 2em;
+    margin: auto;
+}
+#footer .right{
+    margin: auto;
+    text-align: center;
+}
+.navElement{
+    margin-top: 1em;
+    margin-bottom: 1em;
+    flex-grow: 1;
+    display:flex;
+    align-items: center;
+}
+.navElement a{
+    font-size: 1.5em;
+    flex-grow: 1;
+}
+
+a:hover{
+    color: red;
+}
+.ImageArticle{
+    padding-top: 56.25%;
+    width: calc(100% - 3px);
+    border-bottom: 3px solid var(--Text);
+    position: relative;
+    align-content: center;
+    background-color: black;
+}
+.ImageArticle img{
+    border: 3px solid var(--Text);
+    position:absolute;
+    top:0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width:  calc(100% - 3px);
+    height: 100%;
+    object-fit: contain;
+}
+.ImageArticle Iframe{
+    position:absolute;
+    top:0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width:  calc(100% - 3px);
+    height: 100%;
+    object-fit: contain;
+    border: 3px solid var(--Text);
+}
+#Article{
+    min-height: 100vh;
+    background-color: var(--Main);
+    text-align: center;
+    padding-left: 1em;
+    padding-right: 1em;
+    padding-bottom: 5em;
+    position: relative;
+    border-left: 3px solid var(--Text);
+    border-right: 3px solid var(--Text);
+}
+/*Contact page specifics*/
+#contactDiv{
+    width: 70%;
+    margin: auto;
+    display: flex;
+    height: fit-content;
+    flex-direction: column;
+    padding-top: 2em;
+    padding-bottom: 2em;
+}
+#contactDiv p{
+    padding: 0em;
+    line-height: 1;
+} 
+.contactFormRow{
+    display: flex;
+    flex-direction: row;
+    margin: 1em;
+    flex-grow: 1;
+}
+.contactFormRow label{
+    text-align: left;
+    width: 30%;
+}
+.contactFormRow input
+{
+    width: 70%;
+}
+label{
+    color:var(--Text);
+    font-size: 1.5em;
+}
+input{
+    background-color:var(--HighlightDark);
+    color: var(--Text);
+    border-radius: .5em;
+    border-style: none;
+    text-align: center;
+}
+input:focus{
+ border: 3px solid var(--Text);
+}
+input[type="submit"]{
+    line-height: 2;
+    font-size: 1em;
+    width: 50%;
+    margin: auto;
+    margin-top: 2em;
+    box-shadow: 3px 3px 3px black, -3px 3px 3px black;
+}
+input[type="submit"]:hover
+{
+    color: red;
+    box-shadow: 6px 6px 6px black, -6px 6px 6px black;
+}
+input[type="submit"]:focus
+{
+    color: red;
+    box-shadow: 6px 6px 6px black, -6px 6px 6px black;
+}
+textarea{
+    text-align: left;  
+    background-color:#071c08;
+    color: var(--Text);
+    border-radius: .5em;
+    border-style: none;
+    resize: vertical;
+    padding: 1em;
+    font-size: large;
+}
+textarea:focus{
+    border: 3px solid var(--Text);
+}
+.linkRow{
+    width: 100%;
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    margin-top:     .5em;
+    margin-bottom:  .5em;
+}
+.linkRow a{
+   margin: auto;
+    font-size: 2em;
+}
+
+
+/*Project main page*/
+.projectDeck{
+    width: 100%;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+}
+
+.projectCard{
+    border-radius: 1.5em;
+    position: relative;
+    background-color: #071c08;
+    margin: 1em;
+    padding: 1em;
+    height: 40vh;
+    width: calc(40vh*0.75);
+    display: flex;
+    flex-direction: column;
+    box-shadow: 3px 3px 3px black, -3px 3px 3px black;
+  
+}
+.projectCard:hover{
+    box-shadow: 6px 6px 6px black, -6px 6px 6px black;
+}
+.projectCard:focus{
+    box-shadow: 6px 6px 6px black, -6px 6px 6px black;
+}
+.projectCard a{
+
+    font-size: 1.5em;
+    text-align: center;
+    flex-grow: 1;
+}
+.projectCard img{
+    border-radius: .5em;
+    height: 100%;
+    display:block;
+    width: 100%;
+    object-fit: cover;
+}
+.projectCard:hover .projectCardHoverBox {
+    border:3px solid #F5DD66;
+    border-radius: 1.5em;
+}
+.projectCard:hover .projectCardHoverBox img{
+    transition:.5s ease-in-out;
+    opacity: 0;
+}
+.projectCard:hover .projectCardHoverBox p{
+    transition:.5s ease-in-out;
+    opacity: 1;
+}
+.projectCard:focus .projectCardHoverBox {
+    border:3px solid #F5DD66;
+    border-radius: 1.5em;
+}
+.projectCard:focus .projectCardHoverBox img{
+    transition:.5s ease-in-out;
+    opacity: 0;
+}
+.projectCard:focus .projectCardHoverBox p{
+    transition:.5s ease-in-out;
+    opacity: 1;
+}
+.projectCardHoverBox{
+    height: 80%;
+    width: 100%;
+}
+.projectCardHoverBox p{
+    position: absolute;
+    padding: 1em;
+    opacity: 0;
+}
+
+
+
+
+/*Mobile screen*/
+@media only screen and (max-width: 600px)
+{
+    p{
+        text-align: left;
+        font-size: 1em;
+        line-height: 1.75;
+    }
+    i{
+        font-size: 1em;
+        line-height: 1.75;
+    }
+    h1{
+        font-size: 3em;
+    } 
+    h2{
+        font-size: 1.5em;
+    }
+    #header{
+        box-shadow: 0px 5px 5px 5px black;
+    }
+    #contactDiv{
+        width: 100%;
+        padding-top: 2em;
+        padding-left: 0;
+        padding-bottom: 2em;
+    }
+    #contactDiv p{
+        line-height:1.75em;
+    } 
+    #linkRow a{
+        font-size: 1.2em;
+    }
+
+}
+
+/*Guards agaist silly rendering on mobile and tablet landscape mode*/
+@media screen and (max-height:600px) {
+    #header{
+        height: 15vh;
+    }
+    .projectCard{
+        width: 80%;
+        height: 50vw;
+    }
+    .projectCard a{
+        font-size:2em;
+    }
+
+    #footer{
+        flex-direction: column;
+    }
+    #footer .left{
+        margin: auto;
+        text-align: center;
+    }
+    #footer a{
+        font-size: 2em;
+        margin: auto;
+    }
+    #footer .right{
+        margin: auto;
+        text-align: center;
+    }
+    
+}
+
+/*tablet and small desktop screen*/
+@media screen and (min-width: 601px) 
+{
+    p{
+        font-size: 1.5em;
+        line-height: 1.75;
+    }
+    i{
+        font-size: 1.5em;
+        line-height: 1.75;
+    } 
+    #contentWrapper{
+        margin-right: 10vw;
+        margin-left: 10vw; 
+    }
+    #Article{
+        padding-left: 3em;
+        padding-right: 3em;  
+    }
+    .navElement a{
+        font-size:2.5em;
+    }
+    .projectCard a{
+        font-size: 1.25em;
+    }
+}
+/*Medium screen*/
+@media only screen and (min-width:1024px)
+{
+    #contentWrapper{
+        margin-right: 15vw;
+        margin-left: 15vw; 
+    }
+    #Article{
+        padding-left: 3em;
+        padding-right: 3em;
+    }
+    .navElement a{
+        font-size:3em;
+    }
+}
+
+/*Widescreen*/
+@media only screen and (min-width:1920px)
+{
+    #contentWrapper{
+        margin-right: 20vw;
+        margin-left: 20vw; 
+    }
+    #Article{
+        padding-left: 5em;
+        padding-right: 5em;
+    }
+    #footer{
+        flex-flow: row wrap; 
+      }
+    #footer .left{
+          margin-right: auto;
+          margin-left: 0;
+          text-align: left;
+    }
+    #footer a{
+
+          font-size: 2em;
+    }
+    #footer .right{
+          margin-left: auto;
+          margin-right: 0;
+          text-align: right;
+    }
+}
+/*for large resolution screens*/
+@media only screen and (min-height: 1400px ) {
+    
+    p, i, .projectCard a, label, textarea{
+        font-size: 3em;
+    } 
+    input, input[type="submit"] {
+        font-size: 2em;
+    }
+    .navElement a{
+        font-size:5em;
+    }
+    h1{
+        font-size: 8em;
+    }
+    h2, #footer a, .linkRow a{
+        font-size: 4em;
+    }
+}
+
